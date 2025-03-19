@@ -1,1 +1,0 @@
-# JournalApplication-SpringBoot
