@@ -64,13 +64,6 @@ Ensure you have the following installed before running the project:
   Authorization: Bearer your_jwt_token
   ```
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
----
 
 ### Topics
 `java` `spring` `spring-boot` `mongodb` `spring-data` `spring-security` `database-management` `java-8` `springframework` `restful-api` `mongodb-atlas` `journalapp` `spring-boot-project` `mongodb-atlas-cloud` `spring-boot-projects`
