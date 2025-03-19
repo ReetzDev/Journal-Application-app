@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: journal
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      database: journaldb
+      auto-index-creation: true
+    redis:
+      host: ${REDIS_URI}
+      port: ${REDIS_PORT}
+      password: ${REDIS_PASS}
+      # Uncomment the following lines if using specific host and port
+      # host: localhost
+      # port: 27017
+  config:
+    import: optional:file:.env[.properties]
+
+  mail:
+    host: smtp.gmail.com
+    port: 587 # using encryption so it is 587 port
+    username: ${EMAIL_USER}
+    password: ${EMAIL_PASS}
+    properties:
+       mail:
+         smtp:
+           auth: true
+           starttls:
+             enable: true # for encryption-decryption
+             required: true
+
+#    host: localhost
+#    port: 6379 #  local port name here
+weatherstack:
+  api:
+    url:
+      ${WEATHER_URL}
+    key:
+      ${WEATHER_KEY}
